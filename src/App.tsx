@@ -19,6 +19,7 @@ import TaxLawPage from './pages/practice-areas/TaxLawPage';
 import LawyerDashboard from './pages/lawyer/LawyerDashboard';
 import ClientDashboard from './pages/client/ClientDashboard';
 import NotFound from './pages/NotFound';
+import CaseDetails from './pages/lawyer/components/CaseDetails';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="lawyer/*" element={<LawyerDashboard />} />
         <Route path="client/*" element={<ClientDashboard />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/case/:caseNumber" element={<CaseDetails />} />
       </Route>
     </Routes>
   );
