@@ -1,0 +1,39 @@
+[
+  {
+    "caseNumber": "A123",
+    "title": "John vs State",
+    "nextHearing": "2025-05-12",
+    "status": "ongoing",
+    "details": "John's criminal defense case."
+  },
+  {
+    "caseNumber": "B456",
+    "title": "XYZ Corp vs ABC Corp",
+    "nextHearing": "2025-05-20",
+    "status": "completed",
+    "result": "won",
+    "details": "Corporate dispute case."
+  },
+  {
+    "caseNumber": "C789",
+    "title": "Smith Family Property Dispute",
+    "nextHearing": "2025-06-05",
+    "status": "ongoing",
+    "details": "Family property settlement issue."
+  },
+  {
+    "caseNumber": "D101",
+    "title": "Enviro NGO vs Factory X",
+    "nextHearing": "2025-06-20",
+    "status": "completed",
+    "result": "lost",
+    "details": "Environmental violation case."
+  },
+  {
+    "caseNumber": "E102",
+    "title": "Traffic Violation Appeal",
+    "nextHearing": "2025-07-01",
+    "status": "ongoing",
+    "details": "Traffic fine dispute."
+  }
+]
