@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
+import lawyerData from '../../resources/lawyerData.json';
+import { useNavigate } from 'react-router-dom'; 
 
 const LawyerLogin: React.FC = () => {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,7 +15,16 @@ const LawyerLogin: React.FC = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Login functionality would be implemented here
+    
+    const user = lawyerData.find(
+      (u) => u.email === email && u.password === password
+    );
+
+    if (user) {
+      navigate('/lawyer/dashboard');
+    } // else {
+    //   setError('Invalid email or password');
+    // }
   };
   
   return (
