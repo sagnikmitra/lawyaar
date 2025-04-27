@@ -6,5 +6,9 @@
     {
       "email": "user2@test.com",
       "password": "12345"
+    },
+    {
+      "email": "client1@lawyaar.com",
+      "password": "lawyaar@1"
     }
   ]
